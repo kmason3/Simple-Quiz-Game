@@ -37,15 +37,13 @@
         }
         
         img#logoLeft {
-            width: 8%;
+            width: 10%;
             align: left;
-            padding: .8em;
+            padding: 1em;
         }
         
         img#logoRight {
-            width: 8%;
-            padding-right: 1.8em;
-            padding-top: .8em;
+            width: 7%;
         }
         
         .quiz {

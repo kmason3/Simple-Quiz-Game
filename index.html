@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSW Atlas Quiz</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/liquidTest.css" />
+        <script src="js/cswJS.js"></script>
+
+    </head>
+    <div class="liquidTest">
+        <div class="header">
+            <img src="images/cswLogo.png" alt="CSW Logo" id="logoRight" align="right">
+            <img src="images/sunQuestLogo.png" alt="SunQuest" id="logoLeft">
+        </div>
+
+        <div class="content">
+            <div class="col1">
+                <table class="instructTable">
+                    <td>
+                        <span id=" instructHead " class="instructHeader"><b>Instructions:</b></span>
+
+                        <p id="instructPara" class="instructBody">
+                            <b>&bullet;</b> Enter your name and email in the fields below <br>
+                            <b>&bullet;</b> If all your answers are correct the submit button will appear at the bottom of the page
+                            <br><b>&bull;</b> Click submit, you will be prompted to send an e-mail that includes your name and email<br>
+                            <b>&bull;</b> Drawings will be held on Friday 10/5
+                        </p>
+                    </td>
+                    <td>
+                        <span id="resHea " class="instructHeader"> <b>Resources:</b></span>
+                        <p id="resPara" class="instructBody">
+                            <b>&bull;</b> <a href="videos/atlas_DI_Mitogen.pdf " target="_blank ">Atlas, DI, and Mitogen (PDF)</a> <br>
+                            <b>&bull;</b> <a href="videos/labWeekVideo.mp4 " target="_blank "> Atlas, DI, and Mitogen (Video)</a> <br>
+                            <b>&bull;</b> //todo: Link to "On The Spot " Video <br>
+                            <b>&bull;</b> <a href="https://www.zeemaps.com/map?group=3140116" target="_blank"> Interactive Staff Map </a>
+                        </p>
+                    </td>
+                </table>
+                <table class="userInfoTable">
+		<form action = "http://tr7-masoncp-01.sqdev.sunquestinfo.com:8086/process_get" method = "GET">
+                    <td class="userInfo">
+                        First Name:
+                        <input type="text" id="fName" name="first_name">
+                    </td>
+                    <td class="userInfo">
+                        Last Name:
+                        <input type="text" id="lName" name="last_name">
+                    </td>
+                    <td class="userInfo">
+                        Email:
+                        <input type="text" id="email" name="email">
+                    </td>
+		</form>
+                </table>
+                <form>
+                    <table class="quiz " id="quiz ">
+                        <tr>
+                            <td id="tdA" class="oddRow">1) MItogen LIMs has workflows <br> for Molecular and __________ testing<br><br>
+                                <select class="answers" id="question1">
+                                <option value="sampleAnswer">            </option>
+                                <option value="sampleAnswer"> Hematology </option>
+                                <option value="correct"     > Esoteric </option>
+                                <option value="sampleAnswer"> Chemistry </option>
+                                <option value="sampleAnswer"> Blood Bank </option> 
+                            </select>
+                            </td>
+                            <td id="tdB" class="oddRow">2) In genetics, what does FISH stand for? <br><br><br>
+                                <select class="answers" id="question2">
+                                <option value="sampleAnswer"> </option>
+                                <option value="sampleAnswer"> Fighing In Someones House </option>
+                                <option value="sampleAnswer">Fill In Something Here </option>
+                                <option value="correct"> Fluorescence In Situ Hybridization </option> 
+                                <option value="sampleAnswer">Forget It Stuff Happens</option>
+                            </select>
+                            </td>
+                            <td id="tdC" class="oddRow">3) How many modules does Sunquest Order and Results Managment program have? <br><br>
+                                <select class="answers" id="question3">
+                                <option value="sampleAnswer"> </option>
+                                <option value="sampleAnswer"> Six </option>
+                                <option value="correct">Four</option>
+                                <option value="sampleAnswer"> Fifty </option> 
+                                <option value="sampleAnswer">Nine</option>
+                            </select>
+                            </td>
+                            <td id="tdD" class="oddRow">4) Mitogen LIMS is a(n) __________ software. <br><br><br>
+                                <select class="answers" id="question4">
+                                <option value="sampleAnswer"> </option>
+                                <option value="sampleAnswer"> Client Server </option>
+                                <option value="sampleAnswer"> Desktop Application </option>
+                                <option value="correct"> Browser based </option> 
+                                <option value="sampleAnswer">Antiquated</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="tdE" class="evenRow">5) What was the previous name for Sunquest Order and Results Management program? <br><br>
+                                <select class="answers" id="question5">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="correct"> Atlas </option>
+                                    <option value="sampleAnswer">Titan</option>
+                                    <option value="sampleAnswer">Globe </option> 
+                                    <option value="sampleAnswer">Hercules</option>
+                                </select>
+                            </td>
+                            <td id="tdF" class="evenRow">6) A functionality of DI not shared with SIM? <br><br><br>
+                                <select class="answers" id="question6">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Resulting </option> 
+                                    <option value="sampleAnswer">Connecting Instruments</option>
+                                    <option value="correct"> Moving Averages </option> 
+                                    <option value="sampleAnswer">Static Medians</option>
+                                </select>
+                            </td>
+                            <td id="tdG" class="evenRow">7) What was the main data entry method(s) <br> of genetic labs before LIMS? <br><br>
+                                <select class="answers" id="question7">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="correct"> Paper and Excel </option> 
+                                    <option value="sampleAnswer">Sticks and Stones</option>
+                                    <option value="sampleAnswer"> Atlas </option> 
+                                    <option value="sampleAnswer">Sunquest Lab</option>
+                                </select>
+                            </td>
+                            <td id="tdH" class="evenRow">8) The Physician Portal is used to <br> __________, __________, and __________ <br><br>
+                                <select class="answers" id="question8">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Diagnose, Treat, Care for Patients </option> 
+                                    <option value="correct">Manage Patients, Place Orders, Receive Results</option>
+                                    <option value="sampleAnswer"> Feed, Walk, Play Fetch </option> 
+                                    <option value="sampleAnswer">Connect Instruments, Accession, Run Tests </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="tdI" class="oddRow">9) What is the purpose of Instrument Manager?<br><br><br>
+                                <select class="answers" id="question9">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Manages Laboratory Employees </option> 
+                                    <option value="sampleAnswer">Selects a Surgeons Tools</option>
+                                    <option value="sampleAnswer"> Directs the Orchestra </option> 
+                                    <option value="correct">Connects Instruments to Applications</option>
+                                </select>
+                            </td>
+                            <td id="tdJ" class="oddRow">10) Di replaces what previous Sunquest product? <br><br><br>
+                                <select class="answers" id="question10">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Mitogen LIMS </option> 
+                                    <option value="correct">Sunquest Instrument Manager</option>
+                                    <option value="sampleAnswer"> Sunquest Lab </option> 
+                                    <option value="sampleAnswer">Atlas</option>
+                                </select>
+                            </td>
+                            <td id="tdK" class="oddRow">11) What are the 4 pillars of growth at Sunquest? <br><br><br>
+                                <select class="answers" id="question11">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Shrink, Old Images, Local, Microbiology </option>
+                                    <option value="sampleAnswer"> Manage Expectations, New Ethos, Lab, Pathology  </option> 
+                                    <option value="correct"> Grow/Retain, New Logos, International, molecular </option>
+                                    <option value="sampleAnswer"> Live, Love, Laugh, Play </option> 
+                                </select>
+                            </td>
+                            <td id="tdL" class="oddRow">12) How many cases has CXS resolved <br> in the past 12 months? <br><br>
+                                <select class="answers" id="question12">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="correct"> 48,314 </option> 
+                                    <option value="sampleAnswer"> 150 </option>
+                                    <option value="sampleAnswer"> 25,000 </option>
+                                    <option value="sampleAnswer"> 3,000 </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="tdM" class="evenRow">13) What are the ways a client can <br> open a case with Support? <br><br>
+                                <select class="answers" id="question13">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Plane, Train, Automobile </option>
+                                    <option value="sampleAnswer"> Text, Skype, Slack, Twitch </option>
+                                    <option value="sampleAnswer"> Telepathy </option>
+                                    <option value="correct"> In person, phone, email, chat, and SUN Portal </option>
+                                </select>
+                            </td>
+                            <td id="tdN" class="evenRow">14) What does VOC stand for in CSX? <br><br><br>
+                                <select class="answers" id="question14">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="sampleAnswer"> Volatile Organic Compound</option>
+                                    <option value="correct"> Voice of the Customer </option>
+                                    <option value="sampleAnswer"> Vote of Confidence</option>
+                                    <option value="sampleAnswer"> Voice of Criticism </option>
+                                </select>
+                            </td>
+                            <td id="tdO" class="evenRow">sampleQuestion<br>
+                                <select class="answers" id="question15">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="correct"> sampleAnswer </option>
+                                    <option value="sampleAnswer">sampleAnswer</option>
+                                    <option value="sampleAnswer">sampleAnswer </option> 
+                                    <option value="sampleAnswer">sampleAnswer</option>
+                                </select>
+                            </td>
+                            <td id="tdP" class="evenRow">sampleQuestion<br>
+                                <select class="answers" id="question16">
+                                    <option value="sampleAnswer"> </option>
+                                    <option value="correct"> sampleAnswer </option> 
+                                    <option value="sampleAnswer"> sampleAnswer </option>
+                                    <option value="sampleAnswer"> sampleAnswer </option> 
+                                    <option value="sampleAnswer"> sampleAnswer </option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="button" onclick="checkResult()" class="button" id="checkResultButton">Check Results</button> <br>
+                    <button type="submit" onclick="sendRespone()" class="button" id="submitButton" value="Submit">Submit</button>
+                </form>
+            </div>
+            <div class="col2">
+                <img src="images/pattern-white.png" alt="Pattern" id="pattern">
+            </div>
+        </div>
+        <div class="footer "></div>
+    </div>
+</body>
+
+</html>
