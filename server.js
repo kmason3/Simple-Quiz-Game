@@ -26,8 +26,8 @@ app.get('/process_get', function (req,res){
 		if(err){return console.log(err);}
 		console.log("File Written!");
 	});
-	res.end(JSON.stringify(response));
-	//res.sendFile(__dirname + "/" + "index.html");
+	//res.end(JSON.stringify(response));
+	res.sendFile(__dirname + "/" + "index.html");
 })
 
 app.post('/createUser', (req,res)=>{
